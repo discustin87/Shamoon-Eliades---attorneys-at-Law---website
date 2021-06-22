@@ -1,0 +1,52 @@
+.sec-3 {
+    background-image: url('/img/pg-1-sec-3background.png');
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    display: grid;
+    justify-content: space-around;
+
+    img {
+        width: 80px;
+    }
+
+    .cards {
+        // change flex to block for small
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    %card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        margin: 30px;
+        width: 225px;
+        height: 220px;
+
+        img {
+            padding: 20px 0;
+        }
+
+    }
+
+    .card1 {
+        @extend %card;
+        background: $background-footer-gradient;
+    }
+
+    .card2 {
+        @extend %card;
+        background: $background-gradient;
+    }
+
+    .card3 {
+        @extend %card;
+        background: $background-footer-gradient;
+
+    }
+}

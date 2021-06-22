@@ -1,0 +1,31 @@
+.sec-2 {
+    background-image: url(/img/pg-1-sec-2.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    height: 70vh;
+
+    
+
+    .sec-2-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: $font-family-two;
+
+        h2 {
+            max-width: 400px;
+            padding-bottom: 50px;
+        }
+
+        p {
+            max-width: 700px;
+            line-height: 1.2;
+        }
+    }
+}

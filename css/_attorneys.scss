@@ -1,0 +1,40 @@
+.attorneys-container {
+    margin: 200px;
+    display: flex;
+
+    img {
+        width: 270px;
+        height: 270px;
+        size: cover;
+    }
+
+   
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    .bio-title {
+        margin-bottom: 30px;
+    }
+
+    .profile-pic {
+        overflow: hidden;
+        border:2px solid $btn-border-color ;
+        border-radius: 50%;
+        width: 270px;
+        
+    }
+
+    .bio {
+        padding: 50px;
+        max-width: 700px;
+    }
+
+    .attorneys-sec-1 {
+        background: $background-footer-gradient;
+    }
+
+    .attorneys-sec-2 {
+        background-color: $background-footer-gradient;
+    }
+}

@@ -1,0 +1,57 @@
+.resources-header {
+    background-image: url(/img/Resources.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-size: 3em;
+        animation: fadeIn 2s ease-in-out ;
+    }
+}
+
+.resources-sec {
+
+    .row {
+        display: flex;
+        align-content: center;
+        padding: 10px 100px;
+
+         .card {
+            background-color: $boxgrey2;
+            border: 2px solid #fff;
+            width: 300px;
+            height: 150px;
+            padding: 30px 20px;
+            margin-top: 50px;
+            margin-right: 100px;
+            overflow: hidden;
+
+            hr {
+                margin: 0px;
+                height: 3px;
+            }
+
+            h3 {
+                padding-top: 10px;
+                text-align: center;
+            }
+        }
+
+        .par {
+            max-width: 800px;
+            padding: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+   
+}

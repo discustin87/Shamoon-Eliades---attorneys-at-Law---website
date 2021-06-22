@@ -1,0 +1,38 @@
+.nav {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    background-color: $Overlay-nav;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    box-shadow: 0 5px 8px rgba(41, 41, 41, 0.8), 0 5px 8px rgba(41, 41, 41, 0.8);
+
+
+    img {
+        width: 270px;
+    }
+
+    // right nav desktop
+    .right-nav {
+        display: flex;
+
+        ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        a {
+            cursor: pointer;
+            text-shadow: 0px 3px 6px rgba($color: #000000, $alpha: 0.5);
+
+        }
+    
+        & li:hover {
+            font-size: medium;
+            transform: scale(1.2);
+        }
+    }
+}

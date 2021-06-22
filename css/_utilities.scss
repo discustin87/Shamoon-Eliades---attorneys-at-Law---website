@@ -1,0 +1,47 @@
+%btn {
+    border: 1px solid $btn-border-color;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    
+    
+
+    &:hover {
+        transform: scale(.98);
+        transition: trandform 0.2s ease-in-out;
+    }
+}
+
+ .btn-solid {
+    background: $highlight;
+    border: 2px solid $btn-border-color;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 5px 8px rgba(41, 41, 41, 0.5), 0 5px 8px rgba(41, 41, 41, 0.5);
+
+    
+    &:hover {
+        border: 2px solid #fff;
+        transform: scale(1.2);
+        transition: trandform 0.5s ease-in-out;
+    }
+}
+
+.btn-gradient-1 {
+    @extend %btn;
+    background: $background-gradient;
+
+
+    // &:hover {
+ 
+    // }
+}
+
+.btn-gradient-2 {
+    @extend %btn;
+    background: $background-footer-gradient;
+
+    // &:hover {
+
+    // }
+}
