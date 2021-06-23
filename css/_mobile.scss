@@ -254,9 +254,63 @@
     }
 }
 
+@media (max-width: 500px) {
+
+    .hero {
+
+        h1 {
+            font-size: 3rem;        
+        }
+
+        .btn {
+            animation: fadeIn 2s ease-in-out;
+    
+        }
+    }
+}
+
 @media (max-width: 400px) {
+
+    .hero {
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 50px;
+        
+        }
+
+    }
+
+    // ***********************
     .calendly {
         height: 150px;
+    }
+
+    
+    .box {
+        transform: none!important;
+
+    }
+
+    .box:nth-of-type(odd) {
+        transform: none!important;
+    }
+
+    .box:nth-of-type(odd).show {
+        transform: none!important;
+    }
+
+    .practice-content {
+        font-size: 0.5em;
+
+        h1 {
+            padding-bottom: 10px;
+            margin-top: 50px;
+        }
+
+        p {
+            padding: 0 10px;
+        }
     }
 }
 
@@ -267,35 +321,33 @@
     }
 
     
-.box {
-    transform: translateX(100%);
-    transition: transform 2s ease;
+    .box {
+        transform: translateX(100%);
+        transition: transform 2s ease;
 
-}
+    }
 
-.box:nth-of-type(odd) {
-   transform: translateX(-100%);
-}
+    .box:nth-of-type(odd) {
+    transform: translateX(-100%);
+    }
 
-.box:nth-of-type(odd).show {
-   transform: translateX(0);
-}
+    .box:nth-of-type(odd).show {
+    transform: translateX(0);
+    }
 
-.show {
-   transform: translateX(0);
-   }
+    .show {
+    transform: translateX(0);
+    }
 
-@keyframes slideInFromTheRight {
-   0% {
-       transform: translateX(100%);
-   }
+    @keyframes slideInFromTheRight {
+        0% {
+            transform: translateX(100%);
+        }
 
-   100% {
-       transform: translateX(0);
-   }
-}
+        100% {
+            transform: translateX(0);
+        }
+    }
     
    
 }
-
-
