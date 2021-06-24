@@ -287,11 +287,11 @@
 
 
     .box {
-        transform: translateX(0);
+        transform: translateX(0)!important;
     }
     
     .box:nth-of-type(odd) {
-       transform: translateX(0);
+       transform: translateX(0)!important;
     }
 
     .box:nth-of-type(odd).show {
