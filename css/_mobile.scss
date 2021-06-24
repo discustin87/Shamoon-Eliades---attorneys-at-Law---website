@@ -285,14 +285,13 @@
         height: 150px;
     }
 
-    
+
     .box {
-        transform: none!important;
-
+        transform: translateX(0);
     }
-
+    
     .box:nth-of-type(odd) {
-        transform: none!important;
+       transform: translateX(0);
     }
 
     .box:nth-of-type(odd).show {
