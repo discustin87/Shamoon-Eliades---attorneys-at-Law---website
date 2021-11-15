@@ -16,7 +16,6 @@
 }
 
 .attorneys-container {
-    // width: 100%;
     margin: 150px;
     display: flex;
     align-items: center;
@@ -36,8 +35,8 @@
     .profile-pic {
         overflow: hidden;
         border-radius: 50%;
-        width: 350px;
-        height: 350px;
+        width: 450px;
+        height: 450px;
         border:2px solid $btn-border-color ;
 
         &.female {
