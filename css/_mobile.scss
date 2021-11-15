@@ -180,6 +180,17 @@
 
 }
 
+@media (max-width: 900px) {
+    .contact-hero-container {
+       display: flex;
+       flex-direction: column;
+
+        a {
+            margin-bottom: 40px;
+        }
+    }
+}
+
 @media (max-width: 1084px) {
     .practice-sec {
     
@@ -266,7 +277,10 @@
             animation: fadeIn 2s ease-in-out;
     
         }
-    }
+    }  
+    .contact-hero-container {
+        background-position-x: -400px;
+     }
 }
 
 @media (max-width: 400px) {
@@ -284,6 +298,8 @@
     .calendly {
         height: 150px;
     }
+
+   
 
     .box {
         transform: translateX(0)!important;
@@ -309,6 +325,8 @@
             padding: 0 10px;
         }
     }
+
+  
 }
 
 @media (max-width: 360px) {
