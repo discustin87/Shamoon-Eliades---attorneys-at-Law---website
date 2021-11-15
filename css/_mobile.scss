@@ -130,6 +130,14 @@
     body {
         overflow-x: hidden;
     }
+
+    .mobile {
+        display: block!important;
+    }
+
+    .desktop {
+        display: none!important;
+    }
     
     .attorneys-container {
 
