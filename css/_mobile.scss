@@ -130,12 +130,13 @@
     body {
         overflow-x: hidden;
     }
-    .desktop {
-        display: none!important;
-    }
     
-    .mobile {
-        display: block!important;
+    .attorneys-container {
+
+        &.michael {
+        display: flex;
+        flex-direction: column-reverse;
+        }
     }
 
     // navbar
