@@ -11,14 +11,6 @@
     transform: scale(1.2);
 }
 
-@media (max-width: 1360px) {
-    .attorneys-container {
-        margin: 100px 10px;
-        display: flex;
-        flex-direction: column;  
-    }
-}
-
 @media (max-width: 1424px) {
     .practice-sec {
         padding: 100px;
@@ -30,6 +22,16 @@
         }
     }
 }
+
+@media (max-width: 1360px) {
+    .attorneys-container {
+        margin: 100px 10px;
+        display: flex;
+        flex-direction: column;  
+    }
+}
+
+
 
 @media (max-width: 1282px) {
     body {
@@ -64,6 +66,52 @@
     }
 }
 
+@media (max-width: 1084px) {
+    .practice-sec {
+    
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+    }
+}
+
+@media (max-width: 1030px) {
+    .contact-hero-container {
+        display: flex;
+        flex-direction: column-reverse;
+       
+        .contact {
+            width: 100vw;
+    
+            h1 {
+                margin-bottom: 80px;
+                font-size: 4rem;
+                font-family: inherit;
+            }
+    
+            a {
+                margin-bottom: 50px;
+                text-align: center;
+            }
+    
+            .emails {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+    
+           
+        }
+    
+       .hero-img {
+           height: 100vh;
+           width: 100vw;
+       }
+    }
+}
+
 @media (max-width: 1000px) {
     .calendly {
         height: 500px;
@@ -90,41 +138,9 @@
                 margin-right: 0px;
                 }
             }
-
-   
-
-                
-            
         }
     }
 }
-
-@media (max-width: 800px) {
-    .contact-sec-2 {
-
-        .card {
-            background: $background-footer-gradient;
-            margin: 50px 30px;
-            // max-width: 1100px;
-            padding: 50px;
-    
-            .inputs {
-              width: 100%;
-            }
-    
-            .links {
-                text-align: center;
-                margin: 50px 0px;
-
-                 .emails {
-                text-align: center;
-                margin-right: 0px;
-                }
-            }
-        }
-    }
-}
-
 
 @media (max-width: 980px) {
     body {
@@ -180,25 +196,47 @@
 
 }
 
-@media (max-width: 900px) {
-    .contact-hero-container {
-       display: flex;
-       flex-direction: column;
+@media (max-width: 800px) {
+    .contact-sec-2 {
 
-        a {
-            margin-bottom: 40px;
+        .card {
+            background: $background-footer-gradient;
+            margin: 50px 30px;
+            // max-width: 1100px;
+            padding: 50px;
+    
+            .inputs {
+              width: 100%;
+            }
+    
+            .links {
+                text-align: center;
+                margin: 50px 0px;
+
+                 .emails {
+                text-align: center;
+                margin-right: 0px;
+                }
+            }
         }
     }
 }
 
-@media (max-width: 1084px) {
+
+
+@media (max-width: 748px) {
     .practice-sec {
     
         .cards {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(1, 1fr);
+            justify-content: center;
 
         }
+    }
+
+    .calendly {
+        margin: 200px 50px;
     }
 }
 
@@ -249,21 +287,7 @@
     }
 }
 
-@media (max-width: 748px) {
-    .practice-sec {
-    
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            justify-content: center;
 
-        }
-    }
-
-    .calendly {
-        margin: 200px 50px;
-    }
-}
 
 @media (max-width: 500px) {
 
@@ -280,7 +304,14 @@
     }  
     .contact-hero-container {
         background-position-x: -400px;
-     }
+     }  
+     
+     .contact-hero-container {
+     
+       .hero-img {
+           background-position-x: -400px;
+       }
+    }
 }
 
 @media (max-width: 400px) {
@@ -325,6 +356,8 @@
             padding: 0 10px;
         }
     }
+
+
 
   
 }

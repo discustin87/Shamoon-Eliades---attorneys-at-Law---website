@@ -37,7 +37,13 @@ a {
     text-decoration: none;
     cursor: pointer;
     color: #fff;
+
+    
 }
+
+.active {
+        color: $highlight2;
+    }
 
 li {
     list-style: none;

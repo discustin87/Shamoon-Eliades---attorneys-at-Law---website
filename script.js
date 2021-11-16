@@ -5,9 +5,6 @@ const openCloseBTN = document.querySelector('.ham-menu');
 function toggleShowClass(e) {
     if (e.target.parentElement.classList.contains('open-btn') || e.target.parentElement.classList.contains('close-btn')){
         openCloseBTN.classList.toggle('show');
-    
-
-        console.log('did it');
     } else {
         
     }
