@@ -31,17 +31,9 @@
     @extend %btn;
     background: $background-gradient;
 
-
-    // &:hover {
- 
-    // }
 }
 
 .btn-gradient-2 {
     @extend %btn;
     background: $background-footer-gradient;
-
-    // &:hover {
-
-    // }
 }
