@@ -9,6 +9,10 @@
     justify-content: center;
 
     .practice-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-top: 500px;
         max-width: 600px;
         text-align: center;
         font-family: $font-family-two;
@@ -26,6 +30,7 @@
 // section
 
 .practice-sec {
+    margin-top: 150px;
     padding: 100px;
     background-color: $background-darker-gradient;
 
