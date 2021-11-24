@@ -3,70 +3,132 @@
     background-image: url(/img/Resources.jpg);
     background-position: center;
     background-size: cover;
-    height: 60vh;
+    height: 40vh;
     display: flex;
     align-items: center;
     justify-content: center;
 
+}
+
+.title {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+    font-size: 2rem;
+    text-align: center;
+
     h1 {
-        font-size: 3em;
+        margin: 20px 0;
+    }
+
+    h3 {
         font-family: $font-family-two;
-        animation: fadeIn 2s ease-in-out ;
+        font-weight: 400;
+    }
+
+    p {
+        font-size: smaller;
+        font-size: 1.5rem;
     }
 }
+
+
 
 .resources-sec {
     overflow: hidden;
     overflow-x: hidden;
+    padding: 0 100px;
+
 
     .row {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        padding: 10px 100px;
+        justify-content: space-around;
+        width: 100%;
+        padding: 80px 100px;
 
-        
-         .card {
-            background-color: $boxgrey2;
-            border: 2px solid #fff;
-            width: 300px;
-            height: 150px;
-            padding: 30px 20px;
-            margin-left: 100px;
+
+        %card {
+            border: 1px solid #fff;
+            border-radius: 20px;
+            width: 400px;
+            height: 250px;
             overflow: hidden;
+            box-shadow: 2px 3px 8px rgba($color: rgb(0, 0, 0), $alpha: 0.8);
+        }
 
-            &:hover {
-                cursor: pointer;
-                transform: scale(1.1);
-                box-shadow: 2px 2px 2px 4px rgba($color: #fff, $alpha: 0.5);
-            }
-
-            hr {
-                margin: 0px;
-                height: 3px;
-            }
-
-            h3 {
-                padding-top: 10px;
-                text-align: center;
-
-                &:hover {
-                    text-decoration: underline;
-                    color: $highlight2;
-                }
-            }
+        .card-1 {
+            @extend %card;
+            background: url(/img/resources1.jpg) no-repeat center center/cover
+        }
+        .card-2 {
+            @extend %card;
+            background: url(/img/resources2.jpg) no-repeat center center/cover
+        }
+        .card-3 {
+            @extend %card;
+            background: url(/img/resources3.jpg) no-repeat center center/cover
+        }
+        .card-4 {
+            @extend %card;
+            background: url(/img/resources4.jpg) no-repeat center center/cover
+        }
+        .card-5 {
+            @extend %card;
+            background: url(/img/resources5.jpg) no-repeat center center/cover
+        }
+        .card-6 {
+            @extend %card;
+            background: url(/img/resources6.jpg) no-repeat center center/cover
+        }
+        .card-7 {
+            @extend %card;
+            background: url(/img/resources7.jpg) no-repeat center center/cover
+        }
+        .card-8 {
+            @extend %card;
+            background: url(/img/resources8.jpg) no-repeat center center/cover
+        }
+        .card-9 {
+            @extend %card;
+            background: url(/img/resources9.jpg) no-repeat center center/cover
+        }
+        .card-10 {
+            @extend %card;
+            background: url(/img/resources10.jpg) no-repeat center center/cover
+        }
+        .card-11 {
+            @extend %card;
+            background: url(/img/resources11.jpeg) no-repeat center center/cover
         }
 
         .par {
-            max-width: 800px;
-            padding: 100px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            max-width: 500px;
+            min-width: 300px;
+
+            h3 {
+                color: $highlight2;
+                text-align: left;
+                font-size: 1.5rem;
+                letter-spacing: 2px;
+                padding-bottom: 20px;
+            }
 
             p {
-                text-align: center;
+                text-align: left;
+                margin-bottom: 50px;
+
             }
+
+            .btn {
+            @extend %btn;
+            text-transform: capitalize;
+            padding: 10px 20px;
+            background: $highlight;
+            border-radius: 10px;
+        }
         }
     }
    

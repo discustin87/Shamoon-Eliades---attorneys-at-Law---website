@@ -56,7 +56,15 @@
             }
     
             .par {
-                padding: 10px 0px;   
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                padding: 10px 0px;  
+                
+                h3 {
+                    text-align: center;
+                }
+
                 p {
                     text-align: center;
                 }
@@ -292,6 +300,10 @@
 
 
 @media (max-width: 500px) {
+
+    .line {
+        width: 100%;
+    }
 
     .hero {
 
