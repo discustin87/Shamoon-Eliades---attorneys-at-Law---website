@@ -1,16 +1,22 @@
 %btn {
     border: 1px solid $btn-border-color;
     padding: 10px;
-    width: 100%;
+    // width: 100%;
     text-align: center;
     
     
 
     &:hover {
-        transform: scale(.98);
+        transform: scale(1.01);
         transition: trandform 0.2s ease-in-out;
     }
+
+    &:active {
+        transform: scale(0.98);
+    }
 }
+
+
 
  .btn-solid {
     background: $highlight;
