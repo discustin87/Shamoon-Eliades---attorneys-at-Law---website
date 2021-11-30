@@ -7,9 +7,7 @@
     align-content: center;
     justify-content: center;
     height: 70vh;
-
     
-
     .sec-2-content {
         display: flex;
         flex-direction: column;
@@ -21,12 +19,14 @@
         h2 {
             max-width: 400px;
             padding-bottom: 50px;
+            
         }
 
         p {
             max-width: 700px;
-            line-height: 1.2;
+            line-height: 1.5;
             padding: 0 20px;
+            text-shadow: 2px 2px 5px rgba($color:rgb(32, 32, 32), $alpha: 1.0);
         }
     }
 }
