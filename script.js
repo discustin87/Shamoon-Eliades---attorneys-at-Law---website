@@ -2,6 +2,9 @@ const openBTN = document.getElementById('open-btn');
 const closeBTN = document.getElementById('close-btn');
 const openCloseBTN = document.querySelector('.ham-menu');
 
+// Email animation
+const labels = document.querySelectorAll('.form-control label');
+
 function toggleShowClass(e) {
     if (e.target.parentElement.classList.contains('open-btn') || e.target.parentElement.classList.contains('close-btn')){
         openCloseBTN.classList.toggle('show');
@@ -34,3 +37,11 @@ function checkBoxes() {
         }
     })
 }
+
+// EMAIL ANIMATION
+labels.forEach(label => {
+    label.innerHTML = label.innerText 
+        .split('')
+        .map((letter, idx) => `<span  style="transition-delay: ${idx * 50}ms;">${letter}</span>`)
+        .join('')
+});

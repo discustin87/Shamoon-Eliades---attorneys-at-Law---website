@@ -123,3 +123,131 @@
     }
 }
 
+
+// email animation
+  
+.contact-sec-2 {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+  }
+  
+  .email-card {
+    background-color: rgba($color: #000000, $alpha: 0.9);
+    padding: 75px;
+    border-radius: 10px;
+    width: 80%;
+    color: #fff;
+    box-shadow: 5px 5px 6px rgba($color: #000000, $alpha: 0.5);
+    margin: 50px 0;
+
+  
+    h1 {
+      text-align: center;
+      color: $highlight2;
+      margin-bottom: 50px;
+      font-size: 2.5rem;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+    }
+  
+    a {
+      text-decoration: none;
+      color: $highlight2;
+    }
+  }
+  
+  .btn-contact {
+    cursor: pointer;
+    display: block;
+    // width: 100%;
+    background: $highlight;
+    color: #fff;
+    padding: 10px 15px;
+    font-family: inherit;
+    font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+  
+    &:focus {
+      outline: 0;
+    }
+  
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+  
+  .text {
+    margin-top: 30px;
+  }
+  
+  .form-control {
+    position: relative;
+    margin: 20px 0 40px;
+    max-width: 500px;
+    min-width: 300px;
+  
+    input {
+      background-color: transparent;
+      border: 0;
+      border-bottom: 2px #fff solid;
+      display: block;
+      width: 100%;
+      padding: 15px 0;
+      font-size: 18px;
+      color: #fff;
+  
+      &:focus, &:valid {
+        outline: 0;
+        border-bottom-color: $highlight2;
+      }
+  
+      &:focus + label span, &:valid + label span {
+        color: $highlight2;
+        transform: translateY(-30px);
+      }
+    }
+
+    textarea {
+        background-color: transparent;
+        border: 0;
+        border-bottom: 2px #fff solid;
+        display: block;
+        width: 100%;
+        padding: 15px 0;
+        font-size: 18px;
+        color: #fff;
+    
+        &:focus, &:valid {
+          outline: 0;
+          border-bottom-color: $highlight2;
+        }
+    
+        &:focus + label span, &:valid + label span {
+          color: $highlight2;
+          transform: translateY(-30px);
+        }
+      }
+  
+    label {
+      position: absolute;
+
+      top: 15px;
+      left: 0;
+  
+      span {
+        display: inline-block;
+        font-size: 18px;
+        min-width: 5px;
+        transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+    
+    }
+  }
+
