@@ -344,10 +344,15 @@
 
     }
 
-    .calendly {
-        height: 150px;
-    }
+    .contact-sec-1 {
+        height: 100%;
+        margin-bottom: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
 
+      }
    
 
     .box {
@@ -384,6 +389,25 @@
     .nav {
        padding: 10px; 
 
+    }
+
+    .hero {
+        margin-top: 100px;
+    }
+
+    .attorneys-hero-container {
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .resources-header {
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .contact-hero-container {
+        margin-top: 100px;
+        text-align: center;
     }
 
     .contact-sec-2 {
