@@ -104,11 +104,17 @@
 
         <!--********* email *************-->
         <section class="contact-sec-2">
-            <div class="email-card">
+            <form action="https://formsubmit.co/ace@shamoonelieades.com" method="post">
+                <div class="email-card">
                 <h1>leave us a Message</h1>
                 <form>
                     <div class="form-control">
-                        <input type="text" required>
+                        <input type="name" name="_replyto" required>
+                        <label>Name</label>
+                    </div>
+        
+                    <div class="form-control">
+                        <input type="email" name="_replyto" required>
                         <label>Email</label>
                     </div>
         
@@ -118,17 +124,17 @@
                     </div>
 
                     <div class="form-control">
-                        <textarea required></textarea>
+                        <textarea name="message" required></textarea>
                         <label>Message</label>
                     </div>
         
-                    <button class="btn-contact">Send Email</button>
+                    <button type="submit" class="btn-contact">Send Email</button>
                 </form>
         
             </div>
+            </form>
         </section>
         <!--************** email end ***********-->
-
 
 
 <!-- footer -->
