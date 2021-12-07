@@ -1,7 +1,6 @@
 .sec-3 {
-    background-image: url('/img/pg-1-sec-3background.png');
-    background-position: center;
-    background-size: cover;
+    background: url('/img/pg-1-sec-3background.png') no-repeat center center/cover;
+    background-attachment: fixed;
     height: 80vh;
     display: grid;
     justify-content: space-around;
@@ -27,6 +26,8 @@
         margin: 30px;
         width: 225px;
         height: 220px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.5), -5px 5px 10px rgba($color: #000000, $alpha: 0.5);
 
         img {
             padding: 20px 0;
