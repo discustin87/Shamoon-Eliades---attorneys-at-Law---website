@@ -36,10 +36,13 @@
 .btn-gradient-1 {
     @extend %btn;
     background: $background-gradient;
+    border-radius: 10px;
 
 }
 
 .btn-gradient-2 {
     @extend %btn;
     background: $background-footer-gradient;
+    border-radius: 10px;
+
 }
