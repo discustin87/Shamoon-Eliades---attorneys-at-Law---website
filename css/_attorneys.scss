@@ -1,5 +1,5 @@
 .attorneys-hero-container {
-    margin-top: 120px;
+    margin-top: 115px;
     font-family: $font-family-one;
     background: url(/img/attorneysHero2.JPG) no-repeat center center/cover;
     // background-size: 100%;
@@ -36,8 +36,13 @@
     .profile-pic {
         overflow: hidden;
         border-radius: 50%;
-        width: 450px;
-        height: 450px;
+        margin-top: 120px;
+        width: auto;
+        height: auto;
+        max-width: 450px;
+        max-height: 450px;
+        min-width: 360px;   
+        min-height: 360px;
         border:2px solid $btn-border-color ;
 
         &.female {
@@ -45,8 +50,9 @@
         }
 
         &.male {
-        background: url(/img/profile-male.png) no-repeat center/cover;
-        // transform: translateX(-10%);
+        background: url(/img/profile-male.png) no-repeat ;
+        background-size: 600px;
+        background-position: 60% 50%;
         }
 
         img {

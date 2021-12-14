@@ -204,6 +204,18 @@
 
 }
 
+// @media (max-width: 995px) {
+//     .left-nav {
+//         // .mobile {
+//         //     max-width: 150px;
+//         // img {
+//         //     width: 100%;
+//         // }
+//     }
+//         }
+
+// }
+
 @media (max-width: 800px) {
     .contact-sec-2 {
 
@@ -246,9 +258,13 @@
     .calendly {
         margin: 200px 50px;
     }
+
+
 }
 
 @media (max-width: 690px) {
+
+
         // footer
     .footer-container {
         background: $background-footer-gradient;
@@ -339,6 +355,8 @@
 
 @media (max-width: 400px) {
 
+
+
     .hero {
 
         h1 {
@@ -388,6 +406,15 @@
 
 
   
+}
+@media (max-width: 380px) {
+    .attorneys-hero-container {
+        // margin: 0;
+        background-size: 180%;
+        background-position:  60% 38%;
+        
+    }
+
 }
 
 @media (max-width: 360px) {
