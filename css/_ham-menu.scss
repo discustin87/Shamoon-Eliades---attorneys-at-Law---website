@@ -27,12 +27,12 @@
         .close-btn {
             position: absolute;
             font-size: 20px;
-            top: 20%;
+            top: 15%;
             right: 15%;
 
             &:hover {
-            cursor: pointer;
-            transform: scale(1.2);
+                cursor: pointer;
+                transform: scale(1.2);
             }
         }
 
