@@ -1,10 +1,52 @@
 .consul-btn {
     position: fixed;
-    z-index: 100;
-    background: url(/img/consultationBtn.jpg.png);
-    right: 20%;
-    bottom: 30%;
-    width: 10px;
-    height: 50px;
+    cursor: pointer;
+    z-index: 5;
+    background: $highlight;
+    box-shadow: 0 5px 8px rgba(41, 41, 41, 0.5), 0 5px 8px rgba(41, 41, 41, 0.5);
+    overflow: hidden;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border: none;
+    right: 3%;
+    top: 20%;
+    border-radius: 20px;
+
+    i {
+        margin-right: 10px;
+    }
+
+    &:hover {
+       box-shadow: 3px 5px 6px rgba(255, 255, 255, 0.6);
+
+    }
 
 }
+
+
+button {
+    cursor: pointer;
+    position: relative;
+  
+    &:focus {
+      outline: none;
+    }
+  
+    .circle {
+      position: absolute;
+      background-color: #fff;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      animation: scale 0.5s ease-out;
+    }
+  }
+  
+  @keyframes scale {
+    to {
+      transform: translate(-50%, -50%) scale(3);
+      opacity: 0;
+    }
+  }

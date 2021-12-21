@@ -2,6 +2,10 @@ const openBTN = document.getElementById('open-btn');
 const closeBTN = document.getElementById('close-btn');
 const openCloseBTN = document.querySelector('.ham-menu');
 
+const consulBTN = document.getElementById('consul-btn');
+const widget = document.getElementById('widget');
+
+
 // Email animation
 const labels = document.querySelectorAll('.form-control label');
 
@@ -13,8 +17,20 @@ function toggleShowClass(e) {
     }
 }
 
-openBTN.addEventListener('click', toggleShowClass);
-closeBTN.addEventListener('click', toggleShowClass);
+
+// consul btn
+consulBTN.addEventListener('click', toggleWidgetShowClass);
+
+function toggleWidgetShowClass(e) {
+    if (e.target.classList.contains('consul-btn') || e.target.parentElement.classList.contains('close-widget-btn')){
+        widget.classList.toggle('widget-show');
+    }
+}
+
+// consulBTN.addEventListener('click', toggleWidgetShowClass);
+// closeBTN.addEventListener('click', toggleShowClass);
+// consul btnend
+
 
 
 // scoll animation *******************************************************
@@ -44,4 +60,29 @@ labels.forEach(label => {
         .split('')
         .map((letter, idx) => `<span  style="transition-delay: ${idx * 50}ms;">${letter}</span>`)
         .join('')
+});
+
+// ripple BTN
+const buttons = document.querySelectorAll('.ripple');
+
+buttons.forEach(button => {
+    button.addEventListener('click', function(e) {
+        const X = e.clientX
+        const Y = e.clientY
+        
+        const buttonTop = e.target.offsetTop
+        const buttonLeft = e.target.offsetLeft
+
+        const xInside = X - buttonLeft
+        const yInside = Y - buttonTop
+
+        const circle = document.createElement('span')
+        circle.classList.add('circle');
+        circle.style.top = yInside + 'px'
+        circle.style.left = xInside + 'px'
+
+        this.appendChild(circle)
+
+        setTimeout(() => circle.remove(), 500);
+    })
 });
