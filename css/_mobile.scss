@@ -240,6 +240,8 @@
             }
         }
     }
+
+
 }
 
 
@@ -260,6 +262,14 @@
     }
 
 
+    .widget {
+        .window {
+            .close-widget-btn {
+            top: 25%;
+             }
+        }
+        
+    }
 }
 
 @media (max-width: 690px) {
@@ -324,6 +334,8 @@
     .line {
         width: 100%;
     }
+
+
 
     .attorneys-hero-container {
         margin: 0;

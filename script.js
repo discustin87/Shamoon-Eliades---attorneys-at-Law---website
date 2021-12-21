@@ -3,12 +3,14 @@ const closeBTN = document.getElementById('close-btn');
 const openCloseBTN = document.querySelector('.ham-menu');
 
 const consulBTN = document.getElementById('consul-btn');
+const closeWidget = document.getElementById('close-widget-btn');
 const widget = document.getElementById('widget');
 
 
 // Email animation
 const labels = document.querySelectorAll('.form-control label');
 
+// nav btn
 function toggleShowClass(e) {
     if (e.target.parentElement.classList.contains('open-btn') || e.target.parentElement.classList.contains('close-btn')){
         openCloseBTN.classList.toggle('show');
@@ -17,19 +19,21 @@ function toggleShowClass(e) {
     }
 }
 
+openBTN.addEventListener('click', toggleShowClass);
+closeBTN.addEventListener('click', toggleShowClass);
 
 // consul btn
 consulBTN.addEventListener('click', toggleWidgetShowClass);
+closeWidget.addEventListener('click', toggleWidgetShowClass);
 
 function toggleWidgetShowClass(e) {
-    if (e.target.classList.contains('consul-btn') || e.target.parentElement.classList.contains('close-widget-btn')){
+    if (e.target.classList.contains('consul-btn') || e.target.classList.contains('close-widget-btn')){
         widget.classList.toggle('widget-show');
     }
 }
 
-// consulBTN.addEventListener('click', toggleWidgetShowClass);
-// closeBTN.addEventListener('click', toggleShowClass);
-// consul btnend
+
+
 
 
 
