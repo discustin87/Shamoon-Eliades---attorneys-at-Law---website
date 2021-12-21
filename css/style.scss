@@ -4,6 +4,7 @@
 @import 'utilities';
 @import 'navbar';
 @import 'ham-menu';
+@import 'consulBTN';
 
 * {
     box-sizing: border-box;
@@ -13,7 +14,7 @@
 
 body {
     overflow-x: hidden;
-    position: relative;
+    // position: relative;
     background: $background-gradient;
     background-repeat: no-repeat;
     background-size: cover;
