@@ -26,7 +26,6 @@
 
         .close-btn {
             position: absolute;
-<<<<<<< HEAD
             top: 15%;
             right: 15%;
         }
@@ -34,16 +33,6 @@
         .close-btn:hover {
             cursor: pointer;
             transform: scale(1.2);
-=======
-            font-size: 20px;
-            top: 15%;
-            right: 15%;
-
-            &:hover {
-                cursor: pointer;
-                transform: scale(1.2);
-            }
->>>>>>> origin/master
         }
 
         img {
