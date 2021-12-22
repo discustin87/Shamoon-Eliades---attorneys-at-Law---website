@@ -335,8 +335,6 @@
         width: 100%;
     }
 
-
-
     .attorneys-hero-container {
         margin: 0;
         background-size: 145%;
@@ -362,6 +360,14 @@
        .hero-img {
            background-position-x: -400px;
        }
+    }
+}
+
+@media (max-width: 414px) {
+    .attorneys-hero-container {
+        margin: 0;
+        margin-top: 60px;
+        height: 60vh;
     }
 }
 
@@ -419,6 +425,8 @@
 
   
 }
+
+
 @media (max-width: 380px) {
     .attorneys-hero-container {
         // margin: 0;
@@ -442,6 +450,7 @@
     .attorneys-hero-container {
         margin-top: 100px;
         text-align: center;
+        height: 30vh;
         background-size: 100%;
 
     }
