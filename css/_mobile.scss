@@ -430,8 +430,9 @@
 @media (max-width: 380px) {
     .attorneys-hero-container {
         // margin: 0;
-        background-size: 180%;
-        background-position:  60% 38%;
+        // background-size: 180%;
+        height: 63vh;
+        background-position: cover;
         
     }
 
