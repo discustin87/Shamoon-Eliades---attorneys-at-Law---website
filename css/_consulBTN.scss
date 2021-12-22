@@ -2,22 +2,22 @@
     position: fixed;
     cursor: pointer;
     z-index: 5;
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     background: $highlight;
     box-shadow: 0 5px 8px rgba(41, 41, 41, 0.5), 0 5px 8px rgba(41, 41, 41, 0.5);
     overflow: hidden;
     color: #fff;
     font-size: 1rem;
-    padding: 5px 10px;
+    padding: 8px 15px;
     border: none;
-    right: 3%;
-    bottom: 2%;
-    border-radius: 20px;
+    right: 2%;
+    top: 18%;
+    border-radius: 10px;
 
     i {
         margin-right: 10px;
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     &:hover {
