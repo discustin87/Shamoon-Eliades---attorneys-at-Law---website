@@ -1,7 +1,6 @@
 %btn {
     border: 1px solid $btn-border-color;
     padding: 10px;
-    // width: 100%;
     text-align: center;
 
     &:hover {
@@ -26,12 +25,11 @@
     padding: 10px;
     box-shadow: 0 5px 8px rgba(41, 41, 41, 0.5), 0 5px 8px rgba(41, 41, 41, 0.5);
 
-
     &:hover {
         border: 2px solid #fff;
         transform: scale(1.2);
         transition: trandform 0.5s ease-in-out;
-}
+    }
 }
 
 .btn-gradient-1 {

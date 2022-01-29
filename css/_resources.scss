@@ -7,7 +7,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .title {
@@ -34,13 +33,10 @@
     }
 }
 
-
-
 .resources-sec {
     overflow: hidden;
     overflow-x: hidden;
     padding: 0 100px;
-
 
     .row {
         display: flex;
@@ -48,7 +44,6 @@
         justify-content: space-around;
         width: 100%;
         padding: 80px 100px;
-
 
         %card {
             border: 1px solid #fff;
@@ -120,7 +115,6 @@
                 text-align: left;
                 margin-bottom: 50px;
                 font-family: $font-family-three;
-
             }
 
             .btn {
@@ -132,6 +126,5 @@
             border-radius: 10px;
         }
         }
-    }
-   
+    }  
 }

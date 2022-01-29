@@ -2,7 +2,7 @@
 .box {
     transform: translateX(400%);
     transition: transform 2s ease;
-
+    opacity: 0;
 }
 
 .box:nth-of-type(odd) {
@@ -15,9 +15,9 @@
 
 .show {
    transform: translateX(0);
+   opacity: 1;
    transition: transform 1s ease-in-out;
-
-   }
+}
 
 @keyframes slideInFromTheRight {
    0% {
