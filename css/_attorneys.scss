@@ -1,8 +1,7 @@
 .attorneys-hero-container {
     margin-top: 115px;
     font-family: $font-family-one;
-    background: url(/img/attorneysHero2.JPG) no-repeat center center/cover;
-    // background-size: 100%;
+    background: url(/img/attorneysHero.JPG) no-repeat top center/cover;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -52,7 +51,7 @@
         &.male {
         background: url(/img/profile-male.png) no-repeat ;
         background-size: 600px;
-        background-position: 60% 50%;
+        background-position: 60% 0;
         }
 
         img {
