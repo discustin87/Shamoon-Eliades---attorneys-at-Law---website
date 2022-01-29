@@ -258,15 +258,21 @@
     }
 
     .calendly {
-        margin: 200px 50px;
+        margin: 100px 50px;
     }
 
 
     .widget {
         .window {
             .close-widget-btn {
-            top: 25%;
+                top: 10%;
              }
+        }
+
+        .widget-box {
+            position: absolute;
+            top: -10%;
+            left: -10%;
         }
         
     }
@@ -330,6 +336,18 @@
 
 
 @media (max-width: 500px) {
+
+    .widget {
+        .window {
+            .close-widget-btn {
+                top: 5%;
+             }
+        }
+    }
+
+    .calendly {
+        margin: 20px;
+    }
 
     .line {
         width: 100%;
